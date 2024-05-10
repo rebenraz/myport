@@ -1,0 +1,1114 @@
+@import url(https://fonts.google.com/specimen/Poppins?query=Popp);rt
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(back.jpg);
+}
+
+.logos {
+    display: flex;
+    width: 130px;
+    height: 30px;
+    position: relative;
+    left: 10%;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: -39%;
+    padding: 20px 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 20px 20px;
+    transition: all ease .40s;
+}
+
+nav ul li a:hover {
+    color: darkgreen;
+}
+
+.home {
+    font-family: monospace;
+    position: relative;
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5% 5px;
+}
+
+.home-content {
+    max-width: 600px;
+    color: white;
+    position: relative;
+    left: 12%;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: -50px;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: -10px;
+}
+
+.home-content h3 span {
+    color: darkgreen;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: -8%;
+    transition: all ease .50s;
+}
+
+.home-content h1 span {
+    color: darkgreen;
+}
+.home-content h1:hover {
+    color: green;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+.home-img img {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 700px;
+    height: 590px;
+}
+
+.social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid darkgreen;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    transition: .5s ease;
+    margin: 30px 15px 30px 0;
+}
+
+.social a:hover {
+    background: green;
+    color: grey;
+}
+
+.social .facebook {
+    position: absolute;
+    bottom: -19%;
+    left: 16%;
+}
+
+.social .instagram {
+    position: absolute;
+    bottom: -19%;
+    left: 19.5%;
+}
+
+.social .tiktok {
+    position: absolute;
+    bottom: -19%;
+    left: 23%;
+}
+
+.social .git {
+    position: absolute;
+    bottom: -19%;
+    left: 26.5%;
+}
+
+button {
+    position: absolute;
+    bottom: 27%;
+    left: 16%;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid darkgreen;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  button:hover {
+    background: darkgreen;
+    box-shadow: 0 0 30px 5px green;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.head h1 {
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 15%;
+    text-align: center;
+}
+
+.head h1{
+    color: white;
+    position: absolute;
+    left: 25%;
+    font-family: monospace;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.head h1:hover {
+    color: lawngreen;
+    transition: all ease .50s;
+}
+
+.head p{
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align:  center;
+}
+
+.head p {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    position: absolute;
+    top: 18%;
+    left: 5%;
+}
+
+.head p span {
+    color: lawngreen;
+}
+
+.heads h1 {
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 24%;
+    text-align: center;
+}
+
+.heads h1 {
+    color: white;
+    position: absolute;
+    bottom: 35%;
+    left: 21%;
+    font-family: monospace;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heads h1:hover {
+    color: lawngreen;
+    transition: all ease .50s;
+}
+
+.heads p{
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.heads p {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    justify-content: center;
+    text-align: justify;
+    position: absolute;
+    bottom: 23%;
+    left: 5%;
+}
+
+.info h1 {
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 27%;
+    text-align: center;
+}
+
+.info h1 {
+    color: white;
+    position: absolute;
+    bottom: 14%;
+    left: 20%;
+    font-family: monospace;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h1:hover {
+    color: lawngreen;
+    transition: all ease .50s;
+}
+
+.info p{
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.info p {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    justify-content: center;
+    position: absolute;
+    bottom: 6%;
+    left: 5%;
+}
+
+.picture .me{
+    width: 250px;
+    height: 190px;
+    border-radius: 20px;
+    border: 3px solid green;
+    position: absolute;
+    right: 24%;
+    bottom: 2%;
+}
+
+.picture .my{
+    width: 250px;
+    height: 190px;
+    border-radius: 20px;
+    border: 3px solid green;
+    position: absolute;
+    right: 3%;
+    bottom: 2%;
+}
+
+.short-vid .vid {
+    width: 530px;
+    height: 300px;
+    border: 3px solid green;
+    border-radius: 20px;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+}
+
+.educ1 {
+    padding: 10px;
+    width: 375px;
+    height: 490px;
+    position: absolute;
+    top: 18%;
+    left: 2%;
+    background: transparent;
+    border-radius: 0.8rem;
+    border: 3px solid green;
+    cursor: pointer;
+    transition: all ease .50s;
+    font-family: monospace;
+}
+
+.educ1 h1 {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: -2%;
+    left: 12%;
+}
+.educ1 h1:hover {
+    color: green;
+    transition: all ease .50s;
+}
+
+.educ1 p {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    margin-right: 2%;
+}
+
+.educ2 {
+    padding: 10px;
+    width: 360px;
+    height: 490px;
+    position: absolute;
+    top: 18%;
+    left: 32%;
+    background: transparent;
+    border-radius: 0.8rem;
+    border: 3px solid green;
+    cursor: pointer;
+    transition: all ease .50s;
+    font-family: monospace;
+}
+
+.educ2 h1 {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: -2%;
+    left: 6%;
+}
+.educ2 h1:hover {
+    color: green;
+    transition: all ease .50s;
+}
+
+.educ2 p {
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    margin-right: 2%;
+}
+
+.educ3 {
+    padding: 10px;
+    width: 482px;
+    height: 490px;
+    position: absolute;
+    top: 18%;
+    right: 2%;
+    background: transparent;
+    border-radius: 0.8rem;
+    border: 3px solid green;
+    cursor: pointer;
+    transition: all ease .50s;
+    font-family: monospace;
+}
+
+.educ3 h1 {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: -2%;
+    left: 23%;
+}
+.educ3 h1:hover {
+    color: green;
+    transition: all ease .50s;
+}
+
+.educ3 p {
+    color: white;
+    font-size: 17px;
+    text-align: justify;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    margin-right: 1%;
+}
+
+.header {
+    font-family: monospace;
+}
+
+.header h1 {
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 37%;
+    text-align: center;
+}
+
+.header h1 {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 14%;
+    left: 5%;
+}
+
+.header h1:hover {
+    color: lawngreen;
+}
+
+.header p{
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 93%;
+}
+
+.header p {
+    color: white;
+    font-size: 25.5px;
+    position: absolute;
+    top: 23%;
+    left: 2%;
+    text-align: justify;
+}
+
+.skill {
+    font-family: monospace;
+}
+.skill h1 {
+    color: white;
+    font-size: 35px;
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 18%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+}
+
+.skill h1:hover {
+    color: lawngreen;
+}
+
+.skill .one, .two, .three, .four, .five {
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 19%;
+}
+
+.skill .one {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 33%;
+    left: 21%;
+}
+
+.skill .two {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 27%;
+    left: 21%;
+}
+
+.skill .three {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 21%;
+    left: 21%;
+}
+
+.skill .four {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 15%;
+    left: 21%;
+}
+
+.skill .five {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 9%;
+    left: 21%;
+}
+
+.skills {
+    font-family: monospace;
+}
+
+.skills h1 {
+    color: white;
+    font-size: 35px;
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 24%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
+
+.skills h1:hover {
+    color: lawngreen;
+}
+
+.skills p {
+    color: white;
+    font-size: 25px;
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 21%;
+    position: absolute;
+    bottom: 7%;
+    right: 17%;
+}
+
+.hob {
+    font-family: monospace;
+}
+
+.hob h1 {
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 19%;
+    text-align: center;
+}
+
+.hob h1 {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 13%;
+    left: 41%;
+    transition: all ease .50s;
+}
+
+.hob h1:hover {
+    color: lawngreen;
+}
+
+.hob p {
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    margin: 0 5% 5% 5%;
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 88%;
+    position: absolute;
+    top: 30%;
+}
+
+.cont {
+    font-family: monospace;
+}
+
+.cont h1 {
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    left: 43%;
+    top: 11%;
+    transition: all ease .50s;
+}
+
+.cont h1:hover {
+    color: lawngreen;
+}
+
+.cont form {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.cont form .input-group input{
+    width: 20%;
+    height: 2px;
+    padding: 1.5rem;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid darkgreen;
+    margin: 2% 0;
+    resize: none;
+}
+
+.cont form .full {
+    position: absolute;
+    left: 27%;
+    top: 46%;
+}
+
+.cont form .email {
+    position: absolute;
+    left: 27%;
+    top: 56%;
+}
+
+.cont form .number {
+    position: absolute;
+    left: 27%;
+    top: 66%;
+}
+
+.cont form .input-group2 textarea {
+    width: 25%;
+    height: 275px;
+    padding: 1.5rem;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid darkgreen;
+    margin: 2% 0;
+    resize: none;
+    position: absolute;
+    left: 52%;
+    bottom: 15%;
+}
+
+.cont form .btn {
+    width: 10%;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid darkgreen;
+    margin: 2% 0;
+    resize: none;
+    position: absolute;
+    right: 28%;
+    bottom: 10%;
+    transition: all ease .50s;
+}
+
+.cont form .btn:hover {
+    color: green;
+}
+
+.cot {
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    position: absolute;
+    top: 22%;
+    margin-left: 25%;
+}
+
+.cot1 {
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    position: absolute;
+    top: 40%;
+    margin-left: 25%;
+}
+
+.cot2 {
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    position: absolute;
+    bottom: 11%;
+    margin-left: 25%;
+}
+
+.social .facebook1 {
+    position: absolute;
+    bottom: 2%;
+    left: 40%;
+}
+
+.social .instagram1 {
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+}
+
+.social .gmail {
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+}
+
+.social .numbers {
+    position: absolute;
+    top: 29%;
+    left: 28%;
+}
+
+.social p {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 29%;
+    left: 32%;
+}
+
+.photo {
+    position: absolute;
+    left: 6%;
+    top: 30%;
+    width: 250px;
+    height: 300px;
+    background-color: darkgreen;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px darkgreen;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+.photo .pic {
+    width: 250px;
+    height: 300px;
+}
+
+  .photo svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(11, 207, 21, 0.2);
+  }
+  
+  .photo__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: green;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .photo:hover .photo__content {
+    transform: rotateX(0deg);
+  }
+  
+  .photo__title {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .photo:hover svg {
+    scale: 0;
+  }
+  
+  .photo__description {
+    margin: 25px 0 0;
+    font-size: 18px;
+    color: white;
+    line-height: 1.8;
+  }
+ 
+.photo1 {
+    position: absolute;
+    left: 29%;
+    top: 30%;
+    width: 250px;
+    height: 300px;
+    background-color: darkgreen;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px darkgreen;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+.photo1 .pic1 {
+    width: 250px;
+    height: 300px;
+}
+
+  .photo1 svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .photo1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(11, 207, 21, 0.2);
+  }
+  
+  .photo1__content1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: green;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .photo1:hover .photo1__content1 {
+    transform: rotateX(0deg);
+  }
+  
+  .photo1__title1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .photo1:hover svg {
+    scale: 0;
+  }
+  
+  .photo1__description1 {
+    margin: 15px 0 0;
+    font-size: 17px;
+    color: white;
+    line-height: 1.8;
+  }
+  
+.photo2 {
+    position: absolute;
+    right: 29%;
+    top: 30%;
+    width: 250px;
+    height: 300px;
+    background-color: darkgreen;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px darkgreen;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+.photo2 .pic2 {
+    width: 250px;
+    height: 300px;
+}
+
+  .photo2 svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .photo2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(11, 207, 21, 0.2);
+  }
+  
+  .photo2__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: green;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .photo2:hover .photo2__content {
+    transform: rotateX(0deg);
+  }
+  
+  .photo2__title {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .photo2:hover svg {
+    scale: 0;
+  }
+  
+  .photo2__description {
+    margin: 25px 0 0;
+    font-size: 18px;
+    color: white;
+    line-height: 1.8;
+  }
+  
+  .photo3 {
+    position: absolute;
+    right: 6%;
+    top: 30%;
+    width: 250px;
+    height: 300px;
+    background-color: darkgreen;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px darkgreen;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+.photo3 .pic3 {
+    width: 250px;
+    height: 300px;
+}
+
+  .photo3 svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .photo3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(11, 207, 21, 0.2);
+  }
+  
+  .photo3__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: green;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .photo3:hover .photo3__content {
+    transform: rotateX(0deg);
+  }
+  
+  .photo3__title {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .photo3:hover svg {
+    scale: 0;
+  }
+  
+  .photo3__description {
+    margin: 17px 0 0;
+    font-size: 18px;
+    color: white;
+    line-height: 1.8;
+  }
+  
+  footer {
+    background-color: transparent;
+    color: darkgreen;
+    font-size: 10px;
+    text-align: right;
+    padding: -4px;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+  }
